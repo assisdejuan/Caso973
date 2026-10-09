@@ -1,0 +1,72 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="150dp"
+    android:viewportWidth="200"
+    android:viewportHeight="150">
+    <path
+        android:fillColor="@color/map_sea"
+        android:pathData="M0,0 L200,0 L200,150 L0,150 Z" />
+    <path
+        android:fillColor="@color/map_land"
+        android:strokeColor="@color/folder_dark"
+        android:strokeWidth="1"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M0,0 L130,0 C128,20 136,40 138,52 L176,54 C183,57 183,65 176,67 L140,68 C142,90 146,120 150,150 L0,150 Z" />
+    <path
+        android:strokeColor="@color/map_wave"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M160,95 q5,-3 10,0 t10,0 M172,115 q5,-3 10,0 t10,0 M180,25 q5,-3 10,0 t10,0 M165,135 q5,-3 10,0 t10,0" />
+    <path
+        android:strokeColor="@color/sheet_rule"
+        android:strokeWidth="0.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M0,50 L130,50 M0,100 L140,100 M50,0 L50,150 M100,0 L100,150" />
+    <path
+        android:fillColor="@color/stamp_red_soft"
+        android:strokeColor="@color/stamp_red"
+        android:strokeWidth="1.4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M116,48 A36,36 0 1,1 188,48 A36,36 0 1,1 116,48 Z" />
+    <path
+        android:strokeColor="@color/map_radio"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M40,110 L195,24.2" />
+    <path
+        android:strokeColor="@color/map_capitania"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M120,130 L166.8,10" />
+    <path
+        android:fillColor="@color/map_radio"
+        android:pathData="M40,103 L47,115 L33,115 Z" />
+    <path
+        android:fillColor="@color/map_capitania"
+        android:pathData="M115,125 L125,125 L125,135 L115,135 Z" />
+    <path
+        android:fillColor="@color/ink"
+        android:pathData="M20,40 A5,5 0 1,1 30,40 A5,5 0 1,1 20,40 Z" />
+    <path
+        android:fillColor="@color/map_lia"
+        android:pathData="M124,24 L130,30 L124,36 L118,30 Z" />
+    <path
+        android:fillColor="@color/map_lighthouse"
+        android:strokeColor="@color/ink"
+        android:strokeWidth="0.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M170.0,52.5 L171.9,57.4 L177.1,57.7 L173.0,61.0 L174.4,66.1 L170.0,63.2 L165.6,66.1 L167.0,61.0 L162.9,57.7 L168.1,57.4 Z" />
+    <path
+        android:strokeColor="@color/ink_soft"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M14,128 L14,112 M10,116 L14,112 L18,116 M11,140 L11,132 L17,140 L17,132" />
+</vector>

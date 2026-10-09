@@ -1,0 +1,76 @@
+<resources>
+    <style name="Base.Theme.Caso973" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/stamp_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/ink</item>
+        <item name="colorError">@color/stamp_red</item>
+        <item name="android:colorBackground">@color/kraft</item>
+        <item name="colorSurface">@color/sheet</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="colorOnSurfaceVariant">@color/ink_soft</item>
+        <item name="colorOutline">@color/folder_dark</item>
+        <item name="android:statusBarColor">@color/folder</item>
+        <item name="android:navigationBarColor">@color/kraft</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="Theme.Caso973" parent="Base.Theme.Caso973" />
+
+    <!-- Folhas do dossiê -->
+    <style name="Sheet">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/gap_m</item>
+        <item name="android:background">@drawable/bg_sheet</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/gap_m</item>
+    </style>
+
+    <style name="SheetHeading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableStart">@drawable/ic_heading_mark</item>
+        <item name="android:drawablePadding">@dimen/gap_s</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.TitleSmall</item>
+        <item name="android:textColor">@color/stamp_red</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TypedText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/gap_s</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="SubHeading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/gap_m</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.LabelLarge</item>
+        <item name="android:textColor">@color/ink_soft</item>
+    </style>
+
+    <style name="RecorderButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/recorder_button</item>
+        <item name="android:textColor">@color/recorder_body</item>
+        <item name="iconTint">@color/recorder_body</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="iconPadding">4dp</item>
+    </style>
+
+    <style name="RecorderSeekButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/recorder_text</item>
+        <item name="strokeColor">@color/recorder_text</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+</resources>

@@ -1,0 +1,66 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <path
+        android:strokeColor="@color/ink"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M78,30 L96,8" />
+    <path
+        android:strokeColor="@color/stamp_red"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M98,14 A8,8 0 0,1 102,24 M103,8 A15,15 0 0,1 109,26" />
+    <path
+        android:fillColor="@color/wood"
+        android:pathData="M14,36 Q14,28 22,28 L98,28 Q106,28 106,36 L106,96 Q106,104 98,104 L22,104 Q14,104 14,96 Z" />
+    <path
+        android:fillColor="@color/wood_dark"
+        android:pathData="M14,92 L106,92 L106,96 Q106,104 98,104 L22,104 Q14,104 14,96 Z" />
+    <path
+        android:fillColor="@color/sheet"
+        android:strokeColor="@color/wood_dark"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M22,62 A20,20 0 1,1 62,62 A20,20 0 1,1 22,62 Z" />
+    <path
+        android:strokeColor="@color/wood"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M28,54 L56,54 M25,60 L59,60 M25,66 L59,66 M28,72 L56,72" />
+    <path
+        android:fillColor="@color/sticky_note"
+        android:strokeColor="@color/wood_dark"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M68,44 L98,44 L98,62 L68,62 Z" />
+    <path
+        android:strokeColor="@color/ink_soft"
+        android:strokeWidth="1"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M71,56 L71,52 M76,56 L76,53 M81,56 L81,52 M86,56 L86,53 M91,56 L91,52 M95,56 L95,53" />
+    <path
+        android:strokeColor="@color/stamp_red"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M84,47 L84,59" />
+    <path
+        android:fillColor="@color/brass"
+        android:strokeColor="@color/wood_dark"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M68,78 A6,6 0 1,1 80,78 A6,6 0 1,1 68,78 Z M86,78 A6,6 0 1,1 98,78 A6,6 0 1,1 86,78 Z" />
+    <path
+        android:fillColor="@color/wood_dark"
+        android:pathData="M24,104 L30,104 L28,110 L22,110 Z M90,104 L96,104 L98,110 L92,110 Z" />
+</vector>

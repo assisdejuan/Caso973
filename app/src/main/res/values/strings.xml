@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Caso 97.3</string>
+
+    <!-- Central de Investigação -->
+    <string name="central_tab">ARQUIVO 042</string>
+    <string name="central_case_name">CASO 97.3</string>
+    <string name="central_case_subtitle">O sinal perdido de Ponta Escura</string>
+    <string name="central_stamp">CONFIDENCIAL</string>
+    <string name="central_briefing">Madrugada de 14 de agosto. Uma voz sem voz tomou a frequência 97.3 por meio minuto. O arquivo só abre para investigadores credenciados.</string>
+    <string name="hint_codename">Codinome</string>
+    <string name="hint_access_code">Código de acesso</string>
+    <string name="helper_access_code">Procure o número na etiqueta da pasta</string>
+    <string name="readiness_label">Prontidão para a investigação</string>
+    <string name="readiness_percent">%1$d%%</string>
+    <string name="btn_clear">Limpar</string>
+    <string name="btn_access">Acessar dossiê</string>
+
+    <string name="err_codename">Codinome curto demais (mínimo de %1$d letras)</string>
+    <string name="err_access_code">Código incorreto. Acesso negado.</string>
+    <string name="err_readiness">Ajuste a prontidão para %1$d%% ou mais</string>
+
+    <!-- Dossiê -->
+    <string name="case_file_label">Dossiê</string>
+    <string name="file_ident">PROCESSO Nº 042/97.3 · ABERTO EM 14/08, 04:05</string>
+    <string name="file_title">A transmissão das 03:17</string>
+    <string name="file_class">CONFIDENCIAL · USO INTERNO</string>
+
+    <string name="h_summary">01 · RESUMO DA OCORRÊNCIA</string>
+    <string name="summary_body">Na madrugada de 14 de agosto, às 03:17, a programação noturna da Rádio Maré 97.3 FM, única emissora da pequena cidade litorânea de Ponta Escura, foi interrompida por cerca de meio minuto. No lugar da música, os ouvintes escutaram chiado, bipes curtos e longos e um som grave e prolongado.\n\nA direção da rádio acredita em sabotagem e exige um culpado até o amanhecer. A noite estava fria e com neblina densa sobre a costa.</string>
+
+    <string name="h_suspects">02 · SUSPEITOS E HIPÓTESES</string>
+    <string name="suspect_a_letter">A</string>
+    <string name="suspect_a_name">Otávio Brandão, 41</string>
+    <string name="suspect_a_body">Ex-técnico da Rádio Maré, demitido há um mês após uma discussão com a direção. Conhece o transmissor da emissora como ninguém. Mora no bairro Alto da Serra, a oeste da cidade, longe do mar.</string>
+    <string name="suspect_b_letter">B</string>
+    <string name="suspect_b_name">Lia Moraes, 29</string>
+    <string name="suspect_b_body">Radioamadora, possui um transmissor potente em casa, na Vila Norte, perto da praia. Já recebeu duas reclamações por interferência. Diz que às 03:15 participava de um concurso de rádio em outra frequência e que não percebeu nada de estranho.</string>
+    <string name="suspect_c_letter">C</string>
+    <string name="suspect_c_name">Caio Ventura, 67</string>
+    <string name="suspect_c_body">Faroleiro do Farol da Ponta Escura há 30 anos. Mora sozinho no farol, na ponta da península, e conserta rádios antigos como passatempo. Não atendeu o telefone naquela madrugada.</string>
+    <string name="suspect_d_letter">D</string>
+    <string name="suspect_d_name">Fenômeno atmosférico</string>
+    <string name="suspect_d_body">Hipótese do engenheiro da rádio: em certas noites, o sinal de uma emissora distante pode “saltar” na atmosfera e invadir a frequência local por alguns instantes.</string>
+
+    <string name="h_text_evidence">03 · EVIDÊNCIAS TEXTUAIS</string>
+    <string name="ev_operator_head">Depoimento do operador de plantão</string>
+    <string name="ev_operator_body">“Às 03:17 o sinal entrou por cima da nossa programação. Muito chiado, uns bipes curtos e longos repetidos, e de tempos em tempos um som grave enorme, tão alto que parecia estar ao lado do microfone de quem transmitia. Depois de uns trinta segundos, sumiu.”</string>
+    <string name="ev_gate_head">Registro da portaria da Rádio Maré</string>
+    <string name="ev_gate_body">02:58 — entrada liberada com o crachá de Otávio Brandão. A câmera da portaria estava desligada para manutenção.\n\nRelatório técnico: o transmissor principal da emissora não registrou nenhuma alteração entre 02:00 e 04:00.</string>
+    <string name="ev_harbor_head">Nota da Capitania dos Portos</string>
+    <string name="ev_harbor_body">Em toda a região, apenas o Farol da Ponta Escura possui buzina de nevoeiro. Em noites de neblina, ela soa automaticamente a cada 12 segundos. Na Vila Norte, a cerca de 2 km do farol, a buzina chega apenas como um murmúrio distante.\n\nÀs 03:40, um barco pesqueiro relatou ter passado perigosamente perto das pedras da Ponta Escura.</string>
+    <string name="ev_morse_head">Página do manual de código Morse da rádio</string>
+    <!-- Entre aspas para preservar o alinhamento das colunas -->
+    <string name="ev_morse_table">"A  .-      L  .-..\nC  -.-.    O  ---\nE  .       R  .-.\nF  ..-.    S  ...\nI  ..      U  ..-\nN  -.      Z  --.."</string>
+
+    <string name="h_visual_evidence">04 · EVIDÊNCIA VISUAL</string>
+    <string name="ev_map_head">Triangulação do sinal</string>
+    <string name="ev_map_body">Duas antenas registraram a direção da transmissão. As linhas se cruzam dentro do círculo vermelho, a origem provável do sinal.\n\n▲ petróleo: Rádio Maré\n■ laranja: Capitania\n● preto: casa de Otávio\n◆ azul: casa de Lia\n★ dourado: Farol</string>
+
+    <string name="h_audio_evidence">05 · EVIDÊNCIA SONORA</string>
+    <string name="ev_audio_body">Fita gravada pelo operador durante a invasão do sinal. Use fones de ouvido: os bipes e o som grave importam.</string>
+    <string name="recorder_label">FITA 01 · 97.3 FM · 03:17</string>
+    <string name="state_waiting">Aguardando reprodução</string>
+    <string name="state_playing">Reproduzindo</string>
+    <string name="state_paused">Pausado</string>
+    <string name="state_stopped">Parado</string>
+    <string name="state_completed">Reprodução concluída</string>
+    <string name="tape_time">%1$s / %2$s</string>
+    <string name="btn_play">Tocar</string>
+    <string name="btn_pause">Pausar</string>
+    <string name="btn_restart">Início</string>
+    <string name="btn_rewind">« 10 s</string>
+    <string name="btn_forward">10 s »</string>
+    <string name="cd_play">Reproduzir</string>
+    <string name="cd_pause">Pausar</string>
+    <string name="cd_restart">Voltar ao início</string>
+    <string name="cd_rewind">Recuar 10 segundos</string>
+    <string name="cd_forward">Avançar 10 segundos</string>
+
+    <string name="h_solution">06 · RELATÓRIO FINAL</string>
+    <string name="solution_prompt">Quem fez a transmissão das 03:17? Cruze as evidências antes de assinar o relatório.</string>
+    <string name="hint_culprit">Responsável pela transmissão</string>
+    <string name="hint_reasoning">Justificativa da hipótese</string>
+    <string name="btn_verify">Verificar solução</string>
+    <string name="err_culprit">Indique um responsável</string>
+    <string name="err_reasoning">Justifique com pelo menos %1$d caracteres</string>
+    <string name="verdict_solved">Caso solucionado! Sua dedução corresponde às evidências encontradas.</string>
+    <string name="verdict_epilogue">A lâmpada do farol queimou pouco antes das 03:00 e um barco pesqueiro se aproximava das pedras. Sem telefone, Caio Ventura ligou seu velho transmissor na frequência mais ouvida da cidade e enviou SOS LUZ, enquanto a buzina de nevoeiro soava ao lado.</string>
+    <string name="verdict_rejected">Hipótese não confirmada. Analise novamente as evidências e o áudio.</string>
+
+    <string name="h_credits">07 · CRÉDITOS</string>
+    <string name="credits_body">Imagens: ilustrações vetoriais originais criadas para este projeto (rádio antigo e mapa da triangulação).\nÁudio: transmissão sintetizada para este projeto, com chiado, código Morse e buzina de nevoeiro gerados digitalmente.\nHistória e personagens: ficção original.</string>
+    <string name="btn_back">Voltar à central</string>
+
+    <!-- Acessibilidade -->
+    <string name="cd_radio">Fotografia de um rádio antigo de madeira, com mostrador de sintonia e alto-falante, emitindo ondas</string>
+    <string name="cd_map">Mapa de Ponta Escura com duas linhas de triangulação que se cruzam em um círculo vermelho que inclui a casa de Lia, na Vila Norte, e o farol, na ponta da península</string>
+</resources>

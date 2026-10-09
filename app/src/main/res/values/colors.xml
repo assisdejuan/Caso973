@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Pasta de arquivo -->
+    <color name="kraft">#FFEFE4CC</color>
+    <color name="folder">#FFE0CC9E</color>
+    <color name="folder_dark">#FFC9B07A</color>
+    <color name="sheet">#FFFFFDF6</color>
+    <color name="sheet_rule">#FFE4D6B6</color>
+    <color name="sticky_note">#FFFFF1A8</color>
+    <color name="ink">#FF2B2118</color>
+    <color name="ink_soft">#FF6B5D4F</color>
+    <color name="stamp_red">#FFB3261E</color>
+    <color name="stamp_red_soft">#33B3261E</color>
+    <color name="case_closed_green">#FF2E7D32</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Gravador -->
+    <color name="recorder_body">#FF3B2F25</color>
+    <color name="recorder_text">#FFF4E9D2</color>
+    <color name="recorder_led">#FFFF7043</color>
+    <color name="recorder_button">#FFE9DCC0</color>
+
+    <!-- Rádio antigo -->
+    <color name="wood">#FF8B5A2B</color>
+    <color name="wood_dark">#FF5E3B1C</color>
+    <color name="brass">#FFD4A73A</color>
+
+    <!-- Mapa -->
+    <color name="map_land">#FFE9DDBF</color>
+    <color name="map_sea">#FFA9C4C8</color>
+    <color name="map_wave">#FF7FA3A8</color>
+    <color name="map_radio">#FF1F6F78</color>
+    <color name="map_capitania">#FFC77D1A</color>
+    <color name="map_lia">#FF2F5DA8</color>
+    <color name="map_lighthouse">#FFE0A100</color>
+</resources>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kraft"
+    tools:context=".CentralActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_split"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tv_folder_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/page_margin"
+        android:layout_marginTop="@dimen/gap_m"
+        android:background="@drawable/bg_folder_tab"
+        android:fontFamily="monospace"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="6dp"
+        android:text="@string/central_tab"
+        android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+        android:textColor="@color/ink"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_folder_cover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/folder"
+        android:padding="@dimen/page_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_folder_tab"
+        app:layout_constraintEnd_toStartOf="@id/guide_split"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <TextView
+            android:id="@+id/tv_case_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/gap_s"
+            android:fontFamily="serif"
+            android:text="@string/central_case_name"
+            android:textAppearance="@style/TextAppearance.Material3.DisplaySmall"
+            android:textColor="@color/ink"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/iv_radio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_case_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_xs"
+            android:fontFamily="monospace"
+            android:text="@string/central_case_subtitle"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/ink_soft"
+            app:layout_constraintEnd_toEndOf="@id/tv_case_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_case_name" />
+
+        <!-- Foto presa na capa, levemente girada -->
+        <ImageView
+            android:id="@+id/iv_radio"
+            android:layout_width="@dimen/polaroid_size"
+            android:layout_height="@dimen/polaroid_size"
+            android:background="@drawable/bg_polaroid"
+            android:contentDescription="@string/cd_radio"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="22dp"
+            android:rotation="5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_old_radio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Carimbo posicionado com bias horizontal sob o título -->
+        <TextView
+            android:id="@+id/tv_stamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_m"
+            android:background="@drawable/bg_stamp_box"
+            android:fontFamily="monospace"
+            android:letterSpacing="0.2"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"
+            android:rotation="-8"
+            android:text="@string/central_stamp"
+            android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+            android:textColor="@color/stamp_red"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/iv_radio"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_case_subtitle" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tv_stamp,iv_radio" />
+
+        <TextView
+            android:id="@+id/tv_briefing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_m"
+            android:fontFamily="serif"
+            android:lineSpacingMultiplier="1.15"
+            android:text="@string/central_briefing"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/ink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier_cover" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_credentials"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guide_split"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_codename"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/page_margin"
+                android:hint="@string/hint_codename"
+                app:boxBackgroundColor="@color/sheet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/gap_l"
+                app:layout_constraintTop_toTopOf="parent">
+        
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_codename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapCharacters"
+                    android:maxLength="24"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+        
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_access_code"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_s"
+                android:hint="@string/hint_access_code"
+                app:boxBackgroundColor="@color/sheet"
+                app:counterEnabled="true"
+                app:counterMaxLength="3"
+                app:helperText="@string/helper_access_code"
+                app:layout_constraintEnd_toEndOf="@id/til_codename"
+                app:layout_constraintStart_toStartOf="@id/til_codename"
+                app:layout_constraintTop_toBottomOf="@id/til_codename">
+        
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_access_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+        
+            <TextView
+                android:id="@+id/tv_readiness_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_m"
+                android:fontFamily="monospace"
+                android:text="@string/readiness_label"
+                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                android:textColor="@color/ink"
+                app:layout_constraintEnd_toStartOf="@id/tv_readiness_value"
+                app:layout_constraintStart_toStartOf="@id/til_codename"
+                app:layout_constraintTop_toBottomOf="@id/til_access_code" />
+        
+            <TextView
+                android:id="@+id/tv_readiness_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stamp_box"
+                android:fontFamily="monospace"
+                android:paddingHorizontal="8dp"
+                android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                android:textColor="@color/stamp_red"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/tv_readiness_label"
+                app:layout_constraintEnd_toEndOf="@id/til_codename"
+                app:layout_constraintTop_toTopOf="@id/tv_readiness_label"
+                tools:text="0%" />
+        
+            <SeekBar
+                android:id="@+id/sb_readiness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_s"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@color/stamp_red"
+                android:thumbTint="@color/ink"
+                app:layout_constraintEnd_toEndOf="@id/til_codename"
+                app:layout_constraintStart_toStartOf="@id/til_codename"
+                app:layout_constraintTop_toBottomOf="@id/tv_readiness_label" />
+        
+            <TextView
+                android:id="@+id/tv_readiness_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_xs"
+                android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                android:textColor="@color/stamp_red"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/til_codename"
+                app:layout_constraintStart_toStartOf="@id/til_codename"
+                app:layout_constraintTop_toBottomOf="@id/sb_readiness"
+                tools:text="@string/err_readiness"
+                tools:visibility="visible" />
+        
+            <!-- Chain horizontal "packed" encostada à direita com bias = 1 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_clear"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginTop="@dimen/gap_m"
+                android:layout_marginEnd="@dimen/gap_s"
+                android:layout_marginBottom="@dimen/page_margin"
+                android:text="@string/btn_clear"
+                android:textColor="@color/ink_soft"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_access"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="@id/til_codename"
+                app:layout_constraintTop_toBottomOf="@id/tv_readiness_error"
+                app:layout_constraintVertical_bias="0" />
+        
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_access"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:paddingHorizontal="28dp"
+                android:text="@string/btn_access"
+                android:textStyle="bold"
+                app:cornerRadius="4dp"
+                app:layout_constraintEnd_toEndOf="@id/til_codename"
+                app:layout_constraintStart_toEndOf="@id/btn_clear"
+                app:layout_constraintTop_toTopOf="@id/btn_clear" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

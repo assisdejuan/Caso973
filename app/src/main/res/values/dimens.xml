@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="page_margin">18dp</dimen>
+    <dimen name="gap_xs">4dp</dimen>
+    <dimen name="gap_s">8dp</dimen>
+    <dimen name="gap_m">14dp</dimen>
+    <dimen name="gap_l">22dp</dimen>
+    <dimen name="polaroid_size">118dp</dimen>
+    <dimen name="avatar_size">40dp</dimen>
+    <dimen name="btn_height">50dp</dimen>
+</resources>

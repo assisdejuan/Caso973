@@ -1,0 +1,6 @@
+<resources>
+    <!-- Android 15+: mantém o conteúdo fora das barras do sistema -->
+    <style name="Theme.Caso973" parent="Base.Theme.Caso973">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>
